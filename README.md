@@ -1,5 +1,7 @@
-# A HTML5 version of 超A&G+
+# A custom version of 超A&G+
 
+## Usage
+Visit [https://aandg.jie.today](https://aandg.jie.today)
 ## TODO
 
 ### Remove dependency on Flash player
