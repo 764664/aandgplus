@@ -1,0 +1,12 @@
+version: '3'
+services:
+  nginx:
+    image: nginx
+    volumes:
+      - .:/usr/share/nginx/html
+    restart: always
+    expose:
+      - 80
+    environment:
+      - VIRTUAL_HOST=aandg.jie.today
+    network_mode: "bridge"
