@@ -1,0 +1,26 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: aandgplus
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: aandgplus
+    spec:
+      containers:
+      - name: aandgplus
+        image: observer17/aandgplus
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: aandgplus
+spec:
+  ports:
+    - port: 80
+  selector:
+    app: aandgplus
